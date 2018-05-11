@@ -3,6 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.4. (This will need to be installed for any 'ng' commands below)
 
 Requires install of [npm](https://www.npmjs.com/get-npm) or [nodejs](https://nodejs.org/en/download/) (which includes npm)
+
 Optionally install [Angular CLI](https://github.com/angular/angular-cli) to run any 'ng' commands below.
 
 ## Development server
