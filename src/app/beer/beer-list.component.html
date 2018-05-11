@@ -1,5 +1,7 @@
 <div class="panel panel-primary">
-  <h1 style="text-align:center">{{itemType}} List</h1>
+  <div class="panel-heading">
+    {{pageTitle}}
+  </div>
   <div class="panel-body">
     <div class="row">
       <div class="col-sm-2">
@@ -24,8 +26,7 @@
               <p>{{beer.description}}</p>
             </td>
             <td>
-              <img
-                   [src]="beer.image_url" [title]="beer.name | uppercase"
+              <img [src]="beer.image_url" [title]="beer.name | uppercase"
                    [style.width.px]="imageWidth" [style.margin.px]="imageMargin" />
             </td>
           </tr>

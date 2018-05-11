@@ -9,7 +9,7 @@ import { ItemService } from '../helpers/item.service';
   templateUrl: './beer-list.component.html'
 })
 export class BeerListComponent implements OnInit{
-  itemType: string = 'Beer';
+  pageTitle: string = 'Beer List';
   imageWidth: number = 50;
   imageMargin: number = 2;
 
