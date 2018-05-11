@@ -10,7 +10,7 @@ Optionally install [Angular CLI](https://github.com/angular/angular-cli) to run 
 
 ## Development server
 
-run 'npm install' to install any missing dependencies.
+Run 'npm install' to install any missing dependencies.
 
 Run 'npm start' which will execute 'ng serve -o' without having Angular CLI installed. The '-o' will automatically open default browswer but you can also navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
