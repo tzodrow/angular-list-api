@@ -1,0 +1,36 @@
+<div class="panel panel-primary">
+  <h1 style="text-align:center">{{itemType}} List</h1>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-sm-2">
+        Name Filter: <input type="text" [(ngModel)]="listFilter" />
+      </div>
+    </div>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="col-sm-1">Name</th>
+            <th class="col-sm-1">ABV</th>
+            <th class="col-sm-1">Description</th>
+            <th class="col-sm-1">Image</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let beer of filteredBeerList">
+            <td>{{beer.name}}</td>
+            <td>{{convertToDecimal(beer.abv) | percent: "1.0-1"}}</td>
+            <td>
+              <p>{{beer.description}}</p>
+            </td>
+            <td>
+              <img
+                   [src]="beer.image_url" [title]="beer.name | uppercase"
+                   [style.width.px]="imageWidth" [style.margin.px]="imageMargin" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
